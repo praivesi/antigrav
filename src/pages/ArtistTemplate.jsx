@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import '../styles/ArtistTemplate.css';
 
@@ -16,6 +16,11 @@ const ArtistTemplate = () => {
   return (
     <div className="artist-page">
       <div className="artist-container">
+        {/* Navigation */}
+        <nav className="page-nav">
+           <Link to="/" className="back-link">← Soundfolio</Link>
+        </nav>
+
         {/* Profile Section */}
         <section className="profile-section">
           <div className="profile-image-container">

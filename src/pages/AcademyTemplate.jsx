@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import '../styles/AcademyTemplate.css';
 
@@ -15,6 +15,10 @@ const AcademyTemplate = () => {
 
   return (
     <div className="academy-page">
+      <nav className="page-nav container">
+           <Link to="/" className="back-link" style={{color: 'var(--color-text-secondary)'}}>← Soundfolio</Link>
+      </nav>
+
       <header className="academy-header">
          <div className="academy-container">
             <h1 className="academy-name">{data.name}</h1>
