@@ -1,0 +1,132 @@
+/* Shared styles for creation pages */
+.create-mode {
+    border-top: 5px solid #333;
+    /* Visual indicator of edit mode */
+}
+
+.create-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-bottom: 40px;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+}
+
+.save-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.1s;
+}
+
+.save-btn:hover {
+    transform: scale(1.05);
+}
+
+.save-btn:active {
+    transform: scale(0.95);
+}
+
+.cancel-btn {
+    background-color: white;
+    color: #666;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* Input Styles */
+input,
+textarea {
+    border: 1px dashed #ccc;
+    background-color: #fafafa;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: inherit;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #333;
+    background-color: white;
+    outline: none;
+    border-style: solid;
+}
+
+.form-group-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.input-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.input-tag {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+    display: inline-block;
+    width: auto;
+}
+
+.input-text {
+    font-size: 1.1rem;
+}
+
+.input-textarea {
+    font-size: 1rem;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.input-card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.input-card-subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+.input-card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input-inline {
+    flex: 1;
+    margin-bottom: 0;
+}

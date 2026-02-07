@@ -1,0 +1,219 @@
+.academy-page {
+    min-height: 100vh;
+    background-color: var(--color-bg-primary);
+}
+
+.academy-header {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.academy-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+}
+
+.academy-slogan {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.content-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Sections */
+.intro-section,
+.programs-section,
+.instructors-section,
+.schedule-section,
+.academy-contact {
+    margin-bottom: 80px;
+}
+
+.academy-intro-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    max-width: 800px;
+}
+
+/* Programs Grid */
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.program-card {
+    border: 1px solid var(--color-border);
+    padding: 30px;
+    border-radius: 8px;
+    background: white;
+    transition: transform 0.2s;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.program-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.program-desc {
+    color: #555;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.program-highlight {
+    display: inline-block;
+    background-color: var(--color-bg-secondary);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Instructors */
+.representative-card {
+    display: flex;
+    gap: 30px;
+    background-color: var(--color-bg-secondary);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.rep-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.rep-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.rep-info .role {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+    margin-left: 8px;
+}
+
+.rep-info p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.instructor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.instructor-item {
+    text-align: center;
+}
+
+.inst-image {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+    background-color: #eee;
+}
+
+.instructor-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.instructor-item p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Schedule */
+.schedule-list {
+    border-top: 2px solid #333;
+}
+
+.schedule-item {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.schedule-item .date {
+    width: 120px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.schedule-item .event {
+    color: #333;
+}
+
+/* Contact */
+.contact-grid {
+    display: grid;
+    gap: 15px;
+    max-width: 600px;
+}
+
+.contact-row {
+    display: flex;
+    align-items: baseline;
+}
+
+.contact-row .label {
+    width: 100px;
+    color: #888;
+    font-weight: 500;
+}
+
+.contact-row .value {
+    color: #333;
+    font-weight: 500;
+}
+
+.academy-footer {
+    text-align: center;
+    margin-top: 60px;
+    border-top: 1px solid var(--color-border);
+    padding-top: 30px;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .representative-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .schedule-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
