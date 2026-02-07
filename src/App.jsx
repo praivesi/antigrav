@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { DataProvider } from './context/DataContext';
 import MainPage from './pages/MainPage';
 import ArtistTemplate from './pages/ArtistTemplate';
